@@ -1,0 +1,56 @@
+<nav id="nav" class="navbar navbar-inverse nav_header sticky" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header navmain">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                 <a href="/"><img class="img-responsive header-img"  src="/static/images/stack_lab.png" alt="logo" title="stack-labs"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right header-right">
+                   <li class="dropdown_main">
+                        <a href="programs.html" class="dropdown-hover ">programs</a>
+                        <ul class="dropdown-list">
+                            <li>
+                                <a href="/programs-bigdata">Big Data</a>
+                            </li>
+                            <li>
+                                <a href="/programs-cloud">Cloud</a>
+                            </li>
+                            <li>
+                                <a href="/programs-datascience">Data Science</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li><a href="/certifications">certifications</a></li>
+                    <li><a href="#">blogs</a></li>
+                    <li><a href="#">events</a></li>
+                    <li><a href="/about-us">who we are</a></li>
+                    <li><a href="#">alumni</a></li>
+                    <li><a class="enroll" href="/apply">enroll/apply</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <script type="text/javascript">
+
+var stickyOffset = $('.sticky').offset().top;
+
+$(window).scroll(function(){
+  var sticky = $('.sticky'),
+      scroll = $(window).scrollTop();
+    
+  if (scroll >= stickyOffset) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+});
+
+</script>
