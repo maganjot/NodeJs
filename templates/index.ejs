@@ -6,42 +6,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Stack Data Labs Full Stack Training Provider in Big data, Cloud, Data Science & IoT. Join the Training Course for 14 weeks to learn From Industry Experts.">
+    <meta name="keywords" content="Training provider in Chandigarh, Training Courses in Chandigarh, Best Training in Chandigarh, Big data training Chandigarh, Data Science training Chandigarh, Big data Analytics training, Machine Learning in Chandigarh">
 
-    <title>Stack Labs</title>
-
-
-    <!-- Custom CSS -->
-    <link href="/static/css/custom.css" rel="stylesheet">
-     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-
-     <!-- Awsome font -->
-    <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-     <link href="/static/socicon/socicon/styles.css" rel="stylesheet">
-    <link href="/static/themify-icons/css/themify-icons.css" rel="stylesheet">
-
-
-    <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet"> 
-    <link href="//fonts.googleapis.com/css?family=Monoton|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-
+    <title>14-Weeks Training Program - DevOps, BigData ,Data Science</title>
+    <% include ../partials/head %>
 </head>
 
 <body>
-    <header>
         <% include ../partials/header %>
-    </header>
 
-   <div class="modal fade modal_home" tabindex="-1" role="dialog" id="myModal" style="display: none;">
+   <div class="modal fade modal_home" tabindex="-1" role="dialog" id="myModal" style="display: none;" onClick="destroyVideo()">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-body video_popup">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                     <div class="video-container">
-
-                        <iframe width="800" height="450" src="https://www.youtube.com/embed/j6kdSvYNqqc?autoplay=1" frameborder="0" allowfullscreen></iframe>
-
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" onClick="destroyVideo()">×</span></button>
+                    <div class="video-container">
+                            <iframe id="video1" width="800" height="450"  style="border:0;" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -50,112 +31,101 @@
  
     <div id="video_homepage" class="stack_video">
          <div class="container video_container">
+            <p class="video-title">Break Into a World Of Data Revolution</p><span class="video-skills">Learn the Skills in 14 Weeks.</span>
+            <p><a href="#" class="watchBtn" data-toggle="modal" data-target="#myModal" id="playvideo" onclick="playme()">Watch</a></p>
 
-            <h1>Break Into a World Of Data Revolution</h1><h2>Learn the Skills in 14 Weeks.</h2><p><a href="#" class="watchBtn" data-toggle="modal" data-target="#myModal">Watch</a></p><p><a href="apply.html" class="btn btn-lg btn-success">APPLY NOW</a></p>
+            <p><a href="/contact-us/enroll-apply-industrial-training-chandigarh-hyderabad" class="btn btn-lg btn-success">get more info</a></p>
         </div>
-        <video class="video" autoplay="" volume="0" loop=""> 
-            <source src="/static/videos/StackData.mp4" type="video/mp4"> 
-            <source src="/static/videos/StackData.ogv" type="video/ogg"> 
-            <source src="/static/videos/StackData.webm" type="video/webm">
+        <video class="video" autoplay="" loop="" controls="controls" muted="muted"> 
+            <source src="/videos/StackDataLabs-Immersive-Training-Program.mp4" type="video/mp4"> 
+            <source src="/videos/StackDataLabs-Immersive-Training-Program.ogv" type="video/ogg"> 
+            <source src="/videos/StackDataLabs-Immersive-Training-Program.webm" type="video/webm">
         </video>
      <div class="bgOverlay"></div>
 
    </div>
-     
-
-    <section class="courses_section">
+  <section class="courses_section">
         <div class="container-fluid">
-            <div class="courses_inner text-center">
-                <span class="span_text">Next Internet : Cloud, Big Data, IoT </span>
-                <h5>Data is Everthing  <span class="path_course">Choose Your Path</span></h5>
+            <div class="courses_inner span_text text-center">
+                <h1>Explore Immersive Training Program </h1>
+                <h2>Training Courses In BigData, Cloud & IoT</h2>
+                <span>Choose Your Path</span>
                                
             </div>
             <div class="courses_main">
                 <div class="container">
                 <div class="col-md-11 col-md-offset-1">
                 <div class="colmun1">
-                    <div class="text_div">   
-                        <a href="/programs-bigdata">            
-                            <ul class="card">
-                                <div class="icon_bg" style="background-image: url(&quot;/static/images/ic-bigdata.png&quot;);"></div>
-                                <li class="title-row">
-                                    <h4>Big Data</h4>
-                                </li>
+                    <div class="text_div bigdata-bg">   
+                        <a href="/training/big-data">            
+                            <div class="card">
+                                <div class="icon_bg"></div>
+                                    <h3>Big Data Training</h3>
                                 <p>Next Big Thing in Processing & Analyzing the Data Hadoop & Spark.</p>
-                                <div class="overlay" style="background-image: url(&quot;/static/images/creative.jpg&quot;);"></div>
-                                <span class="border"><h6 class="explore">Explore Training</h6></span>
-                            </ul>   
+                                <div class="overlay"></div>
+                                <div class="border"><span class="explore">Explore Training</span></div>
+                            </div>   
                         </a>                                           
                     </div>
 
-                   <div class="text_div">   
-                        <a href="/programs-devops">            
-                            <ul class="card">
-                                <div class="icon_bg" style="background-image: url(&quot;/static/images/ic-devops.png&quot;);"></div>
-                                <li class="title-row">
-                                    <h4>DevOps</h4>
-                                </li>
+                   <div class="text_div devops-bg">   
+                        <a href="/training/devops">            
+                            <div class="card">
+                                <div class="icon_bg"></div>
+                                    <h3>DevOps Training</h3>
                                 <p>Automation,Integration. Developing better Software Ansible, Chef, Docker.</p>
-                                <div class="overlay" style="background-image: url(&quot;/static/images/creative.jpg&quot;);"></div>
-                                <span class="border"><h6 class="explore">Explore Training</h6></span>
-                            </ul>   
+                                <div class="overlay"></div>
+                                <div class="border"><span class="explore">Explore Training</span></div>
+                            </div>   
                         </a>                                           
                     </div>
                  </div>
                 <div class="colmun2">
-                    <div class="text_div">   
-                        <a href="/programs-cloud">            
-                            <ul class="card">
-                                <div class="icon_bg" style="background-image: url(&quot;/static/images/ic-cloud.png&quot;);"></div>
-                                <li class="title-row">
-                                    <h4>Cloud Computing</h4>
-                                </li>
+                    <div class="text_div cloud-bg">   
+                        <a href="/training/cloud-computing">            
+                            <div class="card">
+                                <div class="icon_bg"></div>
+                                    <h3>Cloud Computing Training</h3>
                                 <p>Enabling High Computing through Internet, OpenStack Containers, Azure, AWS.</p>
-                                <div class="overlay" style="background-image: url(&quot;/static/images/creative.jpg&quot;);"></div>
-                                <span class="border"><h6 class="explore">Explore Training</h6></span>
-                            </ul>   
+                                <div class="overlay"></div>
+                                <div class="border"><span class="explore">Explore Training</span></div>
+                            </div>   
                         </a>                                           
                     </div>
-                   <div class="text_div">   
-                        <a href="/internet-of-things">            
-                            <ul class="card">
-                                <div class="icon_bg" style="background-image: url(&quot;/static/images/ic-iot.png&quot;);"></div>
-                                <li class="title-row">
-                                    <h4>IoT</h4>
-                                </li>
+                   <div class="text_div iot-bg">   
+                        <a href="/training/bussiness-intelligence">            
+                            <div class="card">
+                                <div class="icon_bg"></div>
+                                    <h3>Business Intelligence Training</h3>
                                <p>Trillion Sensors embedded in devices.All Connected by Cloud, Big Data & Mobile.</p>
-                                <div class="overlay" style="background-image: url(&quot;/static/images/creative.jpg&quot;);"></div>
-                                <span class="border"><h6 class="explore">Explore Training</h6></span>
-                            </ul>   
+                                <div class="overlay"></div>
+                                <div class="border"><span class="explore">Explore Training</span></div>
+                            </div>   
                         </a>                                           
                     </div>
 
                 </div>
                 <div class="colmun3">
-                   <div class="text_div">   
-                        <a href="/programs-datascience">            
-                            <ul class="card">
-                                <div class="icon_bg" style="background-image: url(&quot;/static/images/ic-datascience.png&quot;);"></div>
-                                <li class="title-row">
-                                    <h4>Data Science</h4>
-                                </li>
+                   <div class="text_div datascience-bg">   
+                        <a href="training/data-science-iot">            
+                            <div class="card">
+                                <div class="icon_bg"></div>
+                                    <h3>Data Science & IoT Training</h3>
                                 <p>Data is New Soil. Build Data Products using Machine Learning, Python, AI.</p>
-                                <div class="overlay" style="background-image: url(&quot;/static/images/creative.jpg&quot;);"></div>
-                                <span class="border"><h6 class="explore">Explore Training</h6></span>
-                            </ul>   
+                                <div class="overlay"></div>
+                                <div class="border"><span class="explore">Explore Training</span></div>
+                            </div>  
                         </a>                                           
                     </div>
-                   <div class="text_div">   
-                        <a href="/programs-data-visualization">            
-                            <ul class="card">
-                                <div class="icon_bg" style="background-image: url(&quot;/static/images/ic-datavisualization.png&quot;);"></div>
-                                <li class="title-row">
-                                    <h4>Data Visualization</h4>
-                                </li>
-                                <p>Visualization the Data for Insights, Storytelling tableau, D3.js, Angular.js</p>
-                                <div class="overlay" style="background-image: url(&quot;/static/images/creative.jpg&quot;);"></div>
-                                <span class="border"><h6 class="explore">Explore Training</h6></span>
-                            </ul>   
+                   <div class="text_div datavisual-bg">   
+                        <a href="/training/data-visualization">            
+                            <div class="card">
+                                <div class="icon_bg"></div>
+                                    <h3>Data Visualization Training</h3>
+                                <p>Visualizing the Data for Insights, Storytelling tableau, D3.js, Angular.js</p>
+                                <div class="overlay"></div>
+                                <div class="border"><span class="explore">Explore Training</span></div>
+                            </div>   
                         </a>                                           
                     </div>
 
@@ -168,15 +138,15 @@
     </section>
 
     <section class="creativity_section">
-    <div style="background-image: url(&quot;/static/images/creative.jpg&quot;);" class="parallax" >
+    <div class="parallax" >
     <div class="parallax-overlay">
         <div class="section-content">
             <div class="container text-center">
 
                 <!-- Parallax title -->
-                <h1>Stack Data Labs adapted World Proven Training. Methodology adopted by Top Fortune Companies in Designing Immense Training program.</h1>
+                <div class="immersive-provider">Stack Data Labs- <h2>Immersive Training Provider </h2> introduces Engineering Empathy Curriculum to create Learning mindset and environment for Human side of Software Development</div>
                 <p class="lead">
-                   Foundation is the key for getting new skills.
+                   Foundation is the key to get new skills.
                 </p>
                 <!-- Parallax title -->
 
@@ -189,8 +159,8 @@
                                 <div class="icon">
                                     <div class="image"><i class="fa fa-institution fa-4x"></i></div>
                                     <div class="info">
-                                        <h3 class="title">Fundamentals</h3>
-                                        <p> We build a solid core of programming, Analytics &amp; Hardware fundamentals to catalyze a long &amp; productive career. Master the technologies that are currently in-demand &amp; develop the foundation to learn the generation technologies.  </p>
+                                        <h3>Fundamentals</h3>
+                                        <p> Fundamentals of Training involves the strong foundation built on Design thinking,algorithms, analytics & how to solve the problem to catalyze a long & productive career.</p>
                                     </div>
                                 </div>
                                 <div class="space"></div>
@@ -202,9 +172,9 @@
                                 <div class="icon">
                                     <div class="image"><i class="fa fa-industry fa-4x"></i></div>
                                     <div class="info">
-                                        <h3 class="title">Technology</h3>
+                                        <h3>Technology</h3>
                                         <p>
-                                            We at Stack labs provide knowledge driven, intensive practical &amp; knowledge drive course curriculum to learn Cloud, Big Data, Mobile Apps, &amp; Internet of Things. You develop problem solving innovation skills &amp; imaging ways to solve the problems.
+                                            Immersive Training Program focused on knowledge driven, intensive practical & task based curriculum to learn Cloud Computing , BigData, Data Science, & Internet of Things.
                                         </p>
                                     </div>
                                 </div>
@@ -217,9 +187,9 @@
                                 <div class="icon">
                                     <div class="image"><i class="fa fa-wrench fa-4x"></i></div>
                                     <div class="info">
-                                        <h3 class="title">Best Practices &amp; Tools</h3>
+                                        <h3>Best Practises and Tools </h3>
                                         <p>
-                                            Stack labs provide intensive practical &amp; knowledge drive course curriculum to learn Cloud, Big Data, Mobile Apps, &amp; Internet of Things. You develop problem solving innovation skills &amp; imaging ways to solve the problems.
+                                           Stack Data Labs Training Course features emphasis on adopting the best Practices and Tools for developing innovative & imaging ways to solve the problems. 
                                         </p>
                                     </div>
                                 </div>
@@ -231,9 +201,9 @@
                                 <div class="icon">
                                     <div class="image"><i class="fa fa-space-shuttle fa-4x"></i></div>
                                     <div class="info">
-                                        <h3 class="title">Engineering Empathy</h3>
+                                        <h3>Engineering Empathy</h3>
                                         <p>
-                                            Students learn to dire deeply into issues &amp; tools that help them work more effectively socially, Individually and as a Team player. series of lectures &amp; exercise &amp; continue Practice given to students to develop intrapersonal and interpersonal skills.
+                                            The ability to experience empathy,understand others views, beginners mindset and willingness to internalize the feedback are few practices important to the students to learn along the Professional Skills. 
                                         </p>
                                     </div>
                                 </div>
@@ -254,52 +224,51 @@
                 <div class="container">
                     <div class="row">
                         <div class="main_text">
-                            <h3>Stack Data Labs Immense Training 
-                                <br> Program Features.</h3>
+                            <h2>Stack Data Labs Training <br> Program Features.</h2>
                         </div>
                     </div>
 
                     <div class="" >
                         <div class="col-md-4 col-sm-6" >
                             <div class="feature boxed">
-                                <h2>77 + </h2>
-                                <h6>Sessions and Workshops Conducted</h6>
+                                <span class="feature-graph"> 77 + </span> 
+                                <h3 class="feature-trained"> Sessions and Workshops Conducted </h3>
                                 <p>
                                    Since 2012, Team Delivering Sessions, Workshops on Cloud, Data Science, Big Data & IOT.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 ">
-                            <div class="feature boxed">
-                                <h2>Cloud Enabled Labs</h2>
-                                <h6>Remotely You Acess</h6>
-                                <p>
-                                   Cloud Factory enables You get Lab Online on Private Cloud within Minutes.
-                                </p>
-                            </div>
-                        </div>
-                         <div class="col-md-4 col-sm-6 " >
+                        <div class="col-md-4 col-sm-6 " >
                             <div class="feature boxed third_list">
-                                <h2>200 +</h2>
-                                <h6>Trained Students & Professionals</h6>
+                              <span class="feature-graph"> 200 + </span> 
+                              <h3 class="feature-trained"> Trained Students & Professionals </h3>
                                 <p>
                                     On Big Data, Devops, Cloud & IOT. Alumini Placed in TCS, Infosys, HP, Accenture & Startups.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 " >
-                            <div class="boxed feature cast-shadow-light mb0">
-                                <h2>Placement & Jobs</h2>
-                                <h6>100% Job Assistance</h6>
+                        <div class="col-md-4 col-sm-6 ">
+                            <div class="feature boxed">
+                                <h3>Cloud Enabled Labs</h3>
+                                <span>Remotely You Acess</span>
                                 <p>
-                                    Carrer Development & Opportunities will be shared on Regular Basis.
+                                   Cloud Factory enables You get Lab Online on Private Cloud within Minutes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 placement-training" >
+                            <div class="boxed feature cast-shadow-light mb0">
+                                <h3>Placement & Jobs</h3>
+                                <span>100% Job Assistance</span> 
+                                <p>
+                                    Career Development & Opportunities will be shared on Regular Basis.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 " >
                             <div class="feature boxed">
-                                <h2>Industry Experience Faculty</h2>
-                                <h6>More than 10 year of Experience</h6>
+                                <h3>Industry Experience Faculty </h3>
+                                <span>More than 10 year of Experience</span>
                                 <p>
                                     Faculty for training have industry Experience plus Exposure to BigData, Cloud, IOT Product & Development.
                                 </p>
@@ -307,8 +276,8 @@
                         </div>
                         <div class="col-md-4 col-sm-6 " >
                             <div class="feature boxed">
-                                <h2>Data Science Labs</h2>
-                                <h6 >Inhouse Analytics Platform</h6>
+                                <h3>Data Science Labs</h3>
+                                <span>Inhouse Analytics Platform</span>
                                 <p>
                                     Big Data Analytics Professional access. Spark & Hadoop Cluster from home & Solve Real World Problems.
                                 </p>
@@ -322,9 +291,9 @@
                 <div class="container news_inner">
                 <div class="row">
                 <div class="col-md-9 col-sm-8 col-xs-12">
-                <h3>Find out how to foster a career in IoT,data Science , BigData ,design and Cloud </h3>
+                    <div class="career-find">Find out how to foster a <h4> Career In Cloud Computing ,DevOps ,IoT ,Data Science ,Big data </h4> </div>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12"><a class="action" href="#">Know More &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <div class="col-md-3 col-sm-4 col-xs-12"><a class="action" href="/contact-us/career-insights-jobs-placement-bigdata-cloud-iot">Know More &nbsp;<i class="fa fa-angle-right"></i></a>
                 </div>
                 </div>
                 </div>
@@ -334,21 +303,27 @@
             <div class="container">
                
                 <div class="col-md-7 col-sm-7 col-xs-12 tech_right">
-                    <h2>Corporate Training & Staffing</h2>
-                    <p>Stack Data Labs Customized Corporate Training Program help Companies & their Employees to Enhance Skills in New Internet Age.</p>
-                    <h2>Looking for talent?</h2>
-                    <p>Our Alumini are Skillful & Adaptive to your Business Needs.</p>
+                    <div class="tech-inner">
+                        <h2>Corporate Training</h2>
+                        <p>Stack Data Labs customized Training Program to help Companies and professionals to enhance Skills for Cloud computing,BigData ,Data Science & Internet of things.</p>
+                        <h4><a href="/enterprise-training" class="action">Enterprise Training &nbsp;<i class="fa fa-angle-right"></i></a></h4>
+                    </div>
+                     <div class="tech-inner">
+                        <h3>Staffing & Looking for talent?</h3>
+                        <p>Companies & Startups Looking for Professionals in Next generation Skills for Developing team in Cloud Computing,BigData ,Data Science & Data Visualization . Our Alumni are Skillful and adaptive to your Environment and Business needs , So Register your Company or Startup to get Right People </p>
+                        <h4><a href="#" class="action">Register &nbsp;<i class="fa fa-angle-right"></i></a></h4>
+                    </div>
                 </div>
 
                  <div class="col-md-5 col-sm-5 col-xs-12 tech_left">
-                    <img  alt="" src="/static/images/tech_graph.png" class="img-responsive">
+                    <img src="/images/StackDataLabs-Corporate-Training-Programs.png" class="img-responsive" alt="Stack Data Labs:Corporate Training Programs" >
                 </div>
             </div>
            </section>
 
             <section class="partnrers_section service_labs">
                 <div class="container"> 
-                    <h2> technology providers & solution provider</h2>
+                    <h4>Technology providers & solution provider</h4>
 
 
                  
@@ -361,41 +336,41 @@
                                 <!-- Client item -->
                                 <div class="col-md-2 col-sm-3 col-xs-6">
                                     <div class="service-inner">
-                                            <a href="#"> <img  alt="" src="/static/images/openstack.png" class="img-responsive"> </a>
+                                            <a href="#"> <img src="/images/StackDataLabs-OpenStack-Training.png" class="img-responsive" alt="Stack Data Labs:OpenStack Training"> </a>
                                      </div>
                                 </div>
                                 <!-- Client item -->
                                 <!-- Client item -->
                                 <div class="col-md-2 col-sm-3  col-xs-6">
                                     <div class="service-inner">
-                                         <a href="#">  <img alt="" src="/static/images/amazonweb.png" class="img-responsive"> </a>
+                                         <a href="#">  <img src="/images/StackDataLabs-AmazonWebServices-Training.png" class="img-responsive"  alt="Stack Data Labs:AWS Training"> </a>
                                       </div>
                                 </div>
                                 <!-- Client item -->
                                 <!-- Client item -->
                                 <div class="col-md-2 col-sm-3  col-xs-6">
                                     <div class="service-inner">
-                                       <a href="#">  <img alt="" src="/static/images/mapr.png" class="img-responsive"> </a>
+                                       <a href="#">  <img src="/images/StackDataLabs-MapR-Training.png" class="img-responsive" alt="Stack Data Labs:MapReduce Training"> </a>
                                     </div>
                                 </div>
                                 <!-- Client item -->
                                 <!-- Client item -->
                                 <div class="col-md-2 col-sm-3 col-xs-6">
                                     <div class="service-inner">
-                                       <a href="#">  <img alt="" src="/static/images/devop.png" class="img-responsive"> </a>
+                                       <a href="#">  <img src="/images/StackDataLabs-Devops-Training.png" class="img-responsive" alt="Stack Data Labs:Xenonstack"> </a>
                                       </div>
                                 </div>
                                 <!-- Client item -->
                                 <!-- Client item -->
                                 <div class="col-md-2 col-sm-3  col-xs-6">
                                     <div class="service-inner">
-                                         <a href="#">  <img alt="" src="/static/images/bluemix.png" class="img-responsive"> </a>
+                                         <a href="#">  <img src="/images/StackDataLabs-Bluemix-Training.png" class="img-responsive" alt="Stack Data Labs:Bluemix"> </a>
                                       </div>
                                 </div>
                                 <!-- Client item -->
                                 <!-- Client item -->
                                 <div class="col-md-2 col-sm-3 col-xs-6">
-                                    <div class="service-inner">
+                                    <div class="service-inner" >
                                             <div class="servive_text">
                                                 <span class="ser_tesla">Tesla</span>
                                                 <span class="ser_data">Data Labs</span>
@@ -416,25 +391,27 @@
                 <div class="container news_inner">
                 <div class="row">
                 <div class="col-md-9 col-sm-8 col-xs-12">
-                <h3>Any Query Or Intrested To Join Training Program </h3>
+                    <div class="career-find">
+                        Any Query or Interested to <h6>Join Training Program in BigData ,Data Science,Cloud Computing & IoT</h6>
+                    </div>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12"><a class="action" href="#">REACH US &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <div class="col-md-3 col-sm-4 col-xs-12"><a class="action" href="/contact-us/register-internship-bigdata-cloud-iot">REACH US &nbsp;<i class="fa fa-angle-right"></i></a>
                 </div>
                 </div>
                 </div>
             </section>
-           
+           <% include ../partials/footer %>
+   <script>
+        function playme() {
+        document.getElementById("video1").src = 'https://www.youtube.com/embed/j6kdSvYNqqc?autoplay=1';
+        }
 
-    <footer>
-        <% include ../partials/footer %>
-    </footer>
-
-
-
-<script src="/static/js/jquery.js"></script>
-
-<script src="/static/js/bootstrap.min.js"></script>
-
+        function destroyVideo(){
+            var url = $('#youtubePlayer').attr('src');
+            $('#video1').attr('src', '');
+            $('#video1').attr('src', url);
+        }
+</script>
 </body>
 
 </html>

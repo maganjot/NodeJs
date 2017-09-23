@@ -8,6 +8,7 @@
     "ejs": "^2.5.1",
     "express": "^4.12.3",
     "mustache": "^2.2.1",
-    "mustache-express": "^1.2.2"
+    "mustache-express": "^1.2.2",
+    "sitemap": "^1.8.1"
   }
 }

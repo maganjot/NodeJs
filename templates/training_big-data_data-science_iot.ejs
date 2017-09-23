@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stack Labs</title>
+    <% include ../partials/head %>
+
+</head>
+
+<body>
+        <nav id="nav" class="navbar navbar-inverse nav_header sticky landing_header" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header navmain landing_head">
+                 <a href="/"><img class="img-responsive landing-img"  src="/images/stack_lab.png" alt="logo" title="stack-labs"></a>
+            </div>
+            <div class="header-mobile">
+                <h4><i class="fa fa-phone" aria-hidden="true"></i>(+91) 803-319-2899</h4>
+            </div>
+           
+        </div>
+        <!-- /.container -->
+    </nav>
+
+   <div class="modal fade modal_home" tabindex="-1" role="dialog" id="myModal" style="display: none;" onClick="destroyVideo()">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body video_popup">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onClick="destroyVideo()" ><span aria-hidden="true">×</span></button>
+                      <div class="video-container">
+                            <iframe id="video1" width="800" height="450"  frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <section class="stack_margin">
+    <div id="video_homepage" class="stack_video">
+         <div class="container-fluid video_container">
+            <div class="col-md-6">
+                 <p class="video-title">Break Into a World Of Data Revolution</p><span class="video-skills">Learn the Skills in 14 Weeks.</span>
+                 <p><a href="#" class="watchBtn" data-toggle="modal" data-target="#myModal" id="playvideo" onclick="playme()">Watch</a></p>
+                 <p><a href="/enroll-apply-industrial-training-chandigarh-hyderabad" class="btn btn-lg btn-success">APPLY NOW</a></p>
+            </div>
+        </div>
+        <video class="video" autoplay=""  loop="" controls="controls" muted="muted"> 
+            <source src="/videos/StackData.mp4" type="video/mp4"> 
+            <source src="/videos/StackData.ogv" type="video/ogg"> 
+            <source src="/videos/StackData.webm" type="video/webm">
+        </video>
+     <div class="bgOverlay"></div>
+
+   </div>
+   <div class="video_form">
+                <form class="landing_form">
+                <div class="input-group ">
+                    <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" id="first-name1" placeholder="first name">
+                </div>
+                <div class="input-group ">
+                    <span class="input-group-addon" ><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" id="last-name1" placeholder="last name">
+                  </div>
+                <div class="input-group ">
+                    <span class="input-group-addon"><i class="fa fa-building" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" id="company1" placeholder="company">
+                </div>
+                <div class="input-group ">
+                    <span class="input-group-addon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" id="Email1" placeholder="Work Email">
+                </div>
+                <div class="input-group ">
+                    <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" id="phone1" placeholder="phone">
+                </div>    
+        
+                  <button type="submit" class="btn btn-default">Download Guide <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button>
+                  <p>Your privacy is important to us</br> We will never share your information</p>
+                </form>
+            </div>
+   </section>
+   
+    <section class="program_section">
+        <div class="container-fluid">
+            <div class="program_main">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-4 col-sm-6 prog_icon blue_prog">
+                        <div class="circle_outer">   
+                            <div class="circle_inner">           
+                                <img class="img-responsive" src="/images/big-data-icon.png" alt="data_center" title="data_center">
+                            </div>                                           
+                        </div>
+                        <h2>Big Data</h2>
+                        <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 prog_icon green_prog">
+                        <div class="circle_outer">   
+                            <div class="circle_inner">           
+                                <img class="img-responsive" src="/images/cloud-icon.png" alt="data_center" title="data_center">
+                            </div>                                           
+                        </div>
+                        <h2>Cloud Computing</h2>
+                        <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                    </div>
+                 
+                    <div class="col-md-4 col-sm-6 prog_icon orange_prog">
+                        <div class="circle_outer">   
+                            <div class="circle_inner">           
+                                <img class="img-responsive" src="/images/data-science-icon.png" alt="data_center" title="data_center">
+                            </div>                                           
+                        </div>
+                        <h2>Data Science & IoT</h2>
+                        <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                    </div>  
+                    <div class="col-md-4 col-sm-6 prog_icon blue_prog">
+                        <div class="circle_outer">   
+                            <div class="circle_inner">           
+                                <img class="img-responsive" src="/images/debvops_icon.png" alt="data_center" title="data_center">
+                            </div>                                           
+                        </div>
+                        <h2>DevOps</h2>
+                        <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 prog_icon green_prog">
+                        <div class="circle_outer">   
+                            <div class="circle_inner">           
+                                <img class="img-responsive" src="/images/iot-icon.png" alt="data_center" title="data_center">
+                            </div>                                           
+                        </div>
+                        <h2>Business Intelligence</h2>
+                        <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                    </div>
+                 
+                    <div class="col-md-4 col-sm-6 prog_icon orange_prog">
+                        <div class="circle_outer">   
+                            <div class="circle_inner">           
+                                <img class="img-responsive" src="/images/data-visualization-icon.png" alt="data_center" title="data_center">
+                            </div>                                           
+                        </div>
+                        <h2>Data Visualization</h2>
+                        <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+                    </div>  
+
+                </div>     
+             </div>
+         </div>
+
+    </div>
+    </section>
+
+<section class="main_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_text">
+                            <h2>Stack Data Labs Training <br> Program Features.</h2>
+                        </div>
+                    </div>
+
+                    <div class="" >
+                        <div class="col-md-4 col-sm-6" >
+                            <div class="feature boxed">
+                                <span class="feature-graph"> 77 + </span> 
+                                <h3 class="feature-trained"> Sessions and Workshops Conducted </h3>
+                                <p>
+                                   Since 2012, Team Delivering Sessions, Workshops on Cloud, Data Science, Big Data & IOT.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 " >
+                            <div class="feature boxed third_list">
+                              <span class="feature-graph"> 200 + </span> 
+                              <h3 class="feature-trained"> Trained Students & Professionals </h3>
+                                <p>
+                                    On Big Data, Devops, Cloud & IOT. Alumini Placed in TCS, Infosys, HP, Accenture & Startups.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 ">
+                            <div class="feature boxed">
+                                <h3>Cloud Enabled Labs</h3>
+                                <span>Remotely You Acess</span>
+                                <p>
+                                   Cloud Factory enables You get Lab Online on Private Cloud within Minutes.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 " >
+                            <div class="boxed feature cast-shadow-light mb0">
+                                <h3>Placement & Jobs</h3>
+                                <span>100% Job Assistance</span> 
+                                <p>
+                                    Carrer Development & Opportunities will be shared on Regular Basis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 " >
+                            <div class="feature boxed">
+                                <h3>Industry Experience Faculty </h3>
+                                <span>More than 10 year of Experience</span>
+                                <p>
+                                    Faculty for training have industry Experience plus Exposure to BigData, Cloud, IOT Product & Development.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 " >
+                            <div class="feature boxed">
+                                <h3>Data Science Labs</h3>
+                                <span>Inhouse Analytics Platform</span>
+                                <p>
+                                    Big Data Analytics Professional access. Spark & Hadoop Cluster from home & Solve Real World Problems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+ <section class="news_section newsletter">
+                <div class="container news_inner">
+                <div class="row">
+                <div class="col-md-9 col-sm-8 col-xs-12">
+                <h3>Find out how to foster a career in IoT,data Science , BigData ,design and Cloud </h3>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12"><a class="action" href="/contact-us/career-insights-jobs-placement-bigdata-cloud-iot">Know More &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                </div>
+                </div>
+</section>
+ <section class="partnrers_section service_labs">
+                <div class="container"> 
+                     <h4> training powered by </h4>
+                <div class="service_main">
+                    <div class="text-center">
+                        <!-- Parallax title -->
+                        <!-- Parallax content -->
+                        <div class="service-content">
+                            <div class="row text-center client-list">
+                                <ul class="landing_ul">
+                                <!-- Client item -->
+                                    <li>
+                                        <div class="service-inner">
+                                                <a href="#"> <img  alt="" src="/images/openstack.png" class="img-responsive"> </a>
+                                         </div>
+                                     </li>
+                                     <li>
+                                    <div class="service-inner">
+                                         <a href="#">  <img alt="" src="/images/cloud_factory_logo.png" class="img-responsive"> </a>
+                                      </div>                
+                                     </li>
+                                     <li>
+                                        <div class="service-inner">
+                                            <div class="servive_text">
+                                                <span class="ser_tesla">Akira</span>
+                                                <span class="ser_data">Data Bench</span>
+                                            </div>
+                                        </div>
+                                     </li>
+                                </ul>
+                              
+                            </div>
+                        </div>
+                        <!-- Parallax content -->
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="footer-copy">
+                <div class="container footer_border">
+                    <div class="col-md-4 col-sm-3">
+                        <h6><a href="/">StackDataLabs</a></h6>
+                    </div>
+                    <div class="col-md-8 col-sm-9 foot_nav">
+                        <ul>
+                  
+                            <li><a href="/training">programs</a></li>
+                            <li><a href="/certification/cloud-computing-bigdata-data-science-java-python">certifications</a></li>
+                            <li><a href="#">blogs</a></li>
+                            <li><a href="#">events</a></li>
+                            <li><a href="/company/who-we-are">who we are</a></li>
+                            <li><a href="/company/alumini">alumni</a></li>
+                            <li><a href="/contact-us/enroll-apply-industrial-training-chandigarh-hyderabad" class="enroll">enroll/apply</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+           
+
+
+
+<script>
+        function playme() {
+        document.getElementById("video1").src = 'https://www.youtube.com/embed/j6kdSvYNqqc?autoplay=1';
+        }
+
+        function destroyVideo(){
+            var url = $('#youtubePlayer').attr('src');
+            $('#video1').attr('src', '');
+            $('#video1').attr('src', url);
+        }
+</script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
